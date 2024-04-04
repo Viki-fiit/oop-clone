@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainMenu" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FxControllers.MainMenuController">
+   <children>
+      <Button fx:id="logoutBttn" layoutX="518.0" layoutY="360.0" mnemonicParsing="false" onAction="#logout" text="Log out" />
+      <Label fx:id="nameLabel" layoutX="24.0" layoutY="19.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="weatherLabel" layoutX="407.0" layoutY="26.0" />
+      <Button fx:id="editInfoBttn" layoutX="24.0" layoutY="360.0" mnemonicParsing="false" onAction="#editInfo" text="Edit my info" />
+      <TableView fx:id="hikeList" layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="195.9999237060547" text="name" />
+        </columns>
+      </TableView>
+      <Button fx:id="detailBttn" layoutX="264.0" layoutY="313.0" mnemonicParsing="false" onAction="#details" text="Hike detail" />
+   </children>
+</AnchorPane>

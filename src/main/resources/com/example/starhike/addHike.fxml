@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FxControllers.AddHikeController">
+   <children>
+      <Label fx:id="hikeNameLabel" alignment="CENTER" layoutY="22.0" prefHeight="17.0" prefWidth="600.0" text="New Hike">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="hikeNameTextField" layoutX="226.0" layoutY="93.0" promptText="Hike name" />
+      <TextField fx:id="hikeMinTextField" layoutX="226.0" layoutY="125.0" promptText="Duration of hike" />
+      <ChoiceBox fx:id="difficultyChoiceBox" layoutX="226.0" layoutY="188.0" prefWidth="150.0" />
+      <CheckBox fx:id="walkCheckBox" layoutX="146.0" layoutY="158.0" mnemonicParsing="false" text="Walk" />
+      <CheckBox fx:id="climbCheckBox" layoutX="204.0" layoutY="158.0" mnemonicParsing="false" text="Climb" />
+      <CheckBox fx:id="ladderCheckBox" layoutX="266.0" layoutY="158.0" mnemonicParsing="false" text="Ladder" />
+      <CheckBox fx:id="hikeCheckBox" layoutX="332.0" layoutY="158.0" mnemonicParsing="false" text="Hike" />
+      <CheckBox fx:id="ccCheckBox" layoutX="386.0" layoutY="158.0" mnemonicParsing="false" text="CableCar" />
+      <RadioButton fx:id="AVLtrue" layoutX="207.0" layoutY="224.0" mnemonicParsing="false" text="available">
+         <toggleGroup>
+            <ToggleGroup fx:id="AVL" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="AVLfalse" layoutX="295.0" layoutY="224.0" mnemonicParsing="false" text="not available" toggleGroup="$AVL" />
+      <CheckBox fx:id="sunnyCheckBox" layoutX="143.0" layoutY="248.0" mnemonicParsing="false" text="Sunny" />
+      <CheckBox fx:id="cloudyCheckBox" layoutX="205.0" layoutY="248.0" mnemonicParsing="false" text="Cloudy" />
+      <CheckBox fx:id="rainyCheckBox" layoutX="273.0" layoutY="248.0" mnemonicParsing="false" text="Rainy" />
+      <CheckBox fx:id="windyCheckBox" layoutX="335.0" layoutY="248.0" mnemonicParsing="false" text="Windy" />
+      <CheckBox fx:id="snowyCheckBox" layoutX="399.0" layoutY="248.0" mnemonicParsing="false" text="Snowy" />
+      <Button fx:id="addHikeBttn" layoutX="305.0" layoutY="314.0" mnemonicParsing="false" onAction="#addHike" text="Add Hike" />
+      <Button fx:id="cancelBttn" layoutX="231.0" layoutY="314.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+      <Label fx:id="nameErr" layoutX="385.0" layoutY="97.0" textFill="RED" />
+   </children>
+</AnchorPane>

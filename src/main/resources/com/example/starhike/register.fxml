@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="512.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FxControllers.RegisterController">
+   <children>
+      <Button fx:id="registerBttn" layoutX="251.0" layoutY="458.0" mnemonicParsing="false" onAction="#register" text="Register" />
+      <PasswordField fx:id="psswdField1" layoutX="206.0" layoutY="126.0" />
+      <PasswordField fx:id="psswdField2" layoutX="206.0" layoutY="176.0" />
+      <TextField fx:id="userNameTextField" layoutX="206.0" layoutY="78.0" />
+      <ChoiceBox fx:id="diffChoiceBox" layoutX="206.0" layoutY="238.0" prefWidth="150.0" />
+      <Label layoutX="210.0" layoutY="51.0" text="User name" />
+      <Label layoutX="206.0" layoutY="103.0" text="Password" />
+      <Label layoutX="206.0" layoutY="151.0" text="Repeat password" />
+      <Label layoutX="210.0" layoutY="219.0" text="Difficulty" />
+      <Label layoutX="210.0" layoutY="274.0" text="Preff. type" />
+      <Label layoutX="243.0" layoutY="21.0" text="Registration">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="WalkCheckBox" layoutX="214.0" layoutY="292.0" mnemonicParsing="false" text="Walk" />
+      <CheckBox fx:id="HikeCheckBox" layoutX="214.0" layoutY="317.0" mnemonicParsing="false" text="Hike" />
+      <CheckBox fx:id="ClimbCheckBox" layoutX="214.0" layoutY="342.0" mnemonicParsing="false" text="Climb" />
+      <Label fx:id="psswdErrorMsg" layoutX="206.0" layoutY="201.0" textFill="RED" />
+      <CheckBox fx:id="LadderCheckBox" layoutX="214.0" layoutY="366.0" mnemonicParsing="false" text="Ladder" />
+      <CheckBox fx:id="CableCarCheckBox" layoutX="214.0" layoutY="390.0" mnemonicParsing="false" text="Cable Car" />
+      <Label fx:id="usernameErrorMsg" layoutX="365.0" layoutY="82.0" textFill="RED" />
+      <Label fx:id="weatherLabel" layoutX="419.0" layoutY="27.0"/>
+   </children>
+</AnchorPane>
